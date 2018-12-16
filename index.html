@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 Yasenko Lev</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <ul class="cookiesList"></ul>
+        <form id="cForm">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" placeholder="like 'test'" required/>
+            <label for="cVal">Value</label>
+            <input type="text" placeholder="put some text here" id="cVal" required/>
+            <label for="cVal">Time (sec)</label>
+            <input type="number" min="1" id="cDate" placeholder="default is 1 hour"/>
+            <label for="cPath">Path</label>
+            <input type="text" placeholder="/" id="cPath"/>
+            <label for="cDomain">Domain</label>
+            <input type="text" placeholder="like '.example.org'" id="cDomain"/>
+            <input type="submit" id="createCookie" value="Add">
+        </form>
+    </div>
+</body>
+<style>
+    input {
+        display: block;
+    }
+    #app{
+		background-color: Gray;
+		border-radius: 6px;
+	}
+</style>
+</html>
